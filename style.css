@@ -1,0 +1,31 @@
+*{
+    /* m0+p0+ff */
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+/* 導覽列 */
+nav{
+    display: grid;
+     /* gtc */
+    grid-template-columns: 20% 70% 10%;
+    /* bg */
+    background: rgb(255, 91, 91);
+    /* bs */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+     /* ai 格線用的垂直對其 */
+    align-items: center;
+}
+
+/* 元素1 元素2 */
+/* 選取 元素1 裡面的 元素2 */
+#logo img{
+    width: 50px;
+}
+
+#link a {
+    padding: 0 35px;
+    /* td 文字裝飾 none 無 */
+    text-decoration: none;
+}
