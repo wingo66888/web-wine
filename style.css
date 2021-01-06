@@ -38,7 +38,9 @@ nav{
     color: #226641;
     border:5px #226641;
 }
-
+#products {
+    padding: 0px 50px;
+}
 #products > div {
     display: grid;
     grid-template-columns:60% 40%;
@@ -60,4 +62,64 @@ nav{
 
 #products .text p{
     width: 300px;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+#products > div:nth-child(2){
+    grid-template-areas: "pic text";
+    grid-template-columns: 40% 60%;
+}
+
+#products > div:nth-child(2) .text{
+    grid-area:text;
+}
+#products > div:nth-child(2) .pic{
+    grid-area:pic;
+}
+.button {
+    padding: 8px 30px;
+    border: 1px solid #226641;
+    text-decoration: none;
+    color: #226641;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #226641;
+    color:#fff;
+
+}
+
+/* 門市資訊 */
+#info {
+    display: grid;
+    /* repeat(數量，寬度) */
+    /* fr 格子 */
+    /* 格子 / 數量 */
+    /* 1fr / 3 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 使用 repeat 可以用 間隙 */
+    grid-gap: 15px;
+    width: 1280px;
+    margin: 50px auto 0;
+}
+
+#info .pic img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+#info .text {
+    padding: 0 10px;
+}
+
+#info .text h1{
+    padding: 20px 0;
+}
+
+#info .text p{
+    padding: 10px 0 25px;
+    line-height: 2;
 }
