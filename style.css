@@ -38,12 +38,20 @@ nav{
     color: #226641;
     border:5px #226641;
 }
+
+/* 商品類型 */
+
 #products {
-    padding: 0px 50px;
+    width: 1280px;
+    margin: 0 auto;
 }
+
+/* 元素 1 > 元素 2 */
+/* 元素 1 裡面 第一層 的 元素 2 */
 #products > div {
     display: grid;
-    grid-template-columns:60% 40%;
+    grid-template-columns:40% 60%;
+    margin-top: 20px;
 }
 
 #products .pic img{
@@ -53,7 +61,7 @@ nav{
 }
 
 #products .text{
-    padding: 15px 20px 0 0;
+    padding: 80px 30px 0;
 }
 
 #products .text h1{
@@ -63,22 +71,27 @@ nav{
 #products .text p{
     width: 300px;
     line-height: 2;
-    padding: 10px 0;
+    padding: 10px 0 20px;
 }
 
 #products > div:nth-child(2){
+    /* 格線樣板區域：利用格線區域名稱設定順序 */
     grid-template-areas: "pic text";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% 40%;
 }
 
 #products > div:nth-child(2) .text{
+    /* 格線區域：此區域名稱 */
     grid-area:text;
 }
 #products > div:nth-child(2) .pic{
-    grid-area:pic;
+    grid-area: pic;
 }
+
+/* 按鈕樣式 */
 .button {
-    padding: 8px 30px;
+    padding: 8px 50px;
+    /* 邊框：粗細 樣式 顏色 */
     border: 1px solid #226641;
     text-decoration: none;
     color: #226641;
@@ -122,4 +135,17 @@ nav{
 #info .text p{
     padding: 10px 0 25px;
     line-height: 2;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:rgb(255, 91, 91) ;
+    padding: 20px 30px;
+    margin: 50px 0 0;
+}
+   
+footer .text{
+    width: 1280px;
+    margin: 0 auto;
+    color:white;
 }
