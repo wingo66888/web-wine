@@ -1,6 +1,9 @@
-$("#banner").slick(
+$("#banner").slick({
     speed:500,
     autoplay:true,
     autoplayspeed: 2000,
-    dots:true,
-);
+    dots:true
+});
+$("#service").slick({
+    slidesToShow:3
+});
