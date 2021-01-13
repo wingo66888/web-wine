@@ -39,6 +39,51 @@ nav{
     border:5px #226641;
 }
 
+
+#banner >div {
+    height: 100vh;
+}
+
+/* 最新商品 */
+/* 元素1 元素2 在元素1內的所有元素 */
+#banner div:nth-child(1){
+    background-image: url(./img/1.jpg);
+}
+
+#banner div:nth-child(2){
+    background-image: url(./img/2.jpg);
+}
+
+#banner div:nth-child(3){
+    background-image: url(./img/3.jpg);
+    color:#fff;
+}
+
+#banner h1{
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    text-shadow:0 5px 5px rgba( 0,0,0,0.3);
+}
+
+#banner p{
+    padding: 30px;
+    text-shadow:0 5px 5px rgba( 0,0,0,0.3);
+}
+
+#banner hr{
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 3px rgba( 0,0,0,0.3);
+}
+
+#banner{
+    text-align: center;
+}
+
 /* 商品類型 */
 
 #products {

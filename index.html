@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>紅酒介紹</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -28,6 +29,25 @@
     </nav>
     <!-- 最新消息 -->
     <div id="banner"></div>
+    <!-- (div>h1{標題}+hr+p+{我是文字})*3 -->
+    <div>
+        <h1>標題</h1>
+        <hr>
+        <p></p>
+        我是文字
+    </div>
+    <div>
+        <h1>標題</h1>
+        <hr>
+        <p></p>
+        我是文字
+    </div>
+    <div>
+        <h1>標題</h1>
+        <hr>
+        <p></p>
+        我是文字
+    </div>                        
     <!-- 商品資訊 -->
     <section id="products">
         <!-- (div>.text+.pic)*3 -->
@@ -116,7 +136,12 @@
   <script>
     AOS.init();
   </script>
-
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- slick CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- 連接自己的cdn -->
+<script src="./main.js"></script>
 </body>
 
 </html>
