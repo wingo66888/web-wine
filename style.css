@@ -1,103 +1,118 @@
-*{
+  
+* {
     /* m0+p0+ff */
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: 微軟正黑體;
 }
+
 /* 導覽列 */
-nav{
+nav {
+    /* dg */
     display: grid;
-     /* gtc */
+    /* gtc */
     grid-template-columns: 20% 70% 10%;
     /* bg */
-    background: rgb(255, 91, 91);
+    background: #f17e7e;
     /* bs */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     padding: 20px 30px;
-     /* ai 格線用的垂直對其 */
+    /* ai 格線用的垂直對其 */
     align-items: center;
+    /* 定位：固定式 - 寬度會不見 */
+    position: fixed;
+    /* 上方的位置 */
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+    /* 透明度：0 - 1 */
+    opacity: 0.9;
 }
 
 /* 元素1 元素2 */
 /* 選取 元素1 裡面的 元素2 */
-#logo img{
+#logo img {
     width: 50px;
 }
 
 #link a {
-    padding: 0 35px;
+    padding: 0 50px;
     /* td 文字裝飾 none 無 */
     text-decoration: none;
     font-weight: 900;
-    color: rgb(133, 27, 204);
+    color: #999;
     transition: 0.5s;
     border: 0;
 }
 
-#link a:hover{
+#link a:hover {
     color: #226641;
-    border:5px #226641;
-}
-
-
-#banner >div {
-    height: 100vh;
+    border: 5px #226641;
 }
 
 /* 最新商品 */
-/* 元素1 元素2 在元素1內的所有元素 */
-#banner div:nth-child(1){
-    background-image: url(./img/1.jpg);
+/* 元素1 元素2 - 在元素1 內 所有的 元素 2 */
+#banner div {
+    /* 高度：100 vh 螢幕高度 */
+    height: 100vh;
 }
 
-#banner div:nth-child(2){
-    background-image: url(./img/2.jpg);
+.banner1 {
+    background-image: url(./img/banner1.jpg);
 }
 
-#banner div:nth-child(3){
-    background-image: url(./img/3.jpg);
-    color:#fff;
+.banner2 {
+    background-image: url(./img/banner2.jpg);
 }
 
-#banner h1{
+.banner3 {
+    background-image: url(./img/banner3.jpg);
+}
+
+#banner {
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1 {
     padding: 30px;
     margin-top: 200px;
     font-size: 120px;
-    text-shadow:0 5px 5px rgba( 0,0,0,0.3);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-#banner p{
+#banner p {
     padding: 30px;
-    text-shadow:0 5px 5px rgba( 0,0,0,0.3);
+    font-size: 32px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-#banner hr{
+#banner hr {
     width: 80%;
     margin: 0 auto;
     height: 5px;
     background: #fff;
     border: none;
-    box-shadow: 0 1px 3px rgba( 0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-#banner .slick-prew{
-    left:50px;
+#banner .slick-prev {
+    left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
 }
 
-#banner .slick-next{
-    right:50px;
+#banner .slick-next {
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
 }
 
-#banner .slick-dots{
-    bottom:25px;
-}
-
-#banner{
-    text-align: center;
+#banner .slick-dots {
+    bottom: 25px;
 }
 
 /* 商品類型 */
-
 #products {
     width: 1280px;
     margin: 0 auto;
@@ -107,41 +122,43 @@ nav{
 /* 元素 1 裡面 第一層 的 元素 2 */
 #products > div {
     display: grid;
-    grid-template-columns:40% 60%;
+    grid-template-columns: 40% 60%;
     margin-top: 20px;
 }
 
-#products .pic img{
+#products .pic img {
     width: 100%;
     height: 350px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-#products .text{
+#products .text {
     padding: 80px 30px 0;
 }
 
-#products .text h1{
+#products .text h1 {
     padding: 30px 0;
 }
 
-#products .text p{
+#products .text p {
     width: 300px;
     line-height: 2;
     padding: 10px 0 20px;
 }
 
-#products > div:nth-child(2){
+#products > div:nth-child(2) {
     /* 格線樣板區域：利用格線區域名稱設定順序 */
     grid-template-areas: "pic text";
     grid-template-columns: 60% 40%;
 }
 
-#products > div:nth-child(2) .text{
+
+#products > div:nth-child(2) .text {
     /* 格線區域：此區域名稱 */
-    grid-area:text;
+    grid-area: text;
 }
-#products > div:nth-child(2) .pic{
+#products > div:nth-child(2) .pic {
+    /* 格線區域：此區域名稱 */
     grid-area: pic;
 }
 
@@ -157,8 +174,7 @@ nav{
 
 .button:hover {
     background: #226641;
-    color:#fff;
-
+    color: #fff;
 }
 
 /* 門市資訊 */
@@ -193,39 +209,68 @@ nav{
     padding: 10px 0 25px;
     line-height: 2;
 }
-
 /* 其他服務 */
-#service{
+#service {
     width: 1280px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
-#service div:focus{
+/* focus 聚焦：選取此元素時 */
+#service div:focus {
+    /* 選取邊框：無 */
     outline: none;
 }
+
 #service img {
     width: 300px;
     height: 300px;
-    object-fit:cover;
     border-radius: 50%;
-    /*  border-radius: 50%;寬度要相同 */
+    /* border-radius: 50%; 寬高要相同 */
+    object-fit: cover;
     display: block;
-    /* 區塊 */
+    /* 顯示模式：區塊 */
     margin: 0 auto;
+    /* 區塊元素 block */
     transition: 0.5s;
 }
 
-#banner h2{
-    text-align: center;
-    margin-top: 10px;
-    color: #aaaaaa;
+#service img:hover {
+    border-radius: 15px;
 }
-footer{
-    background:rgb(255, 91, 91) ;
+
+#service h2 {
+    text-align: center;
+    margin-top: 15px;
+    color: #aaa;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* 頁尾 */
+footer {
+    background: #f17e7e;
     margin-top: 100px;
     padding: 50px;
     text-align: center;
 }
+
+#footer-social a {
+    padding: 0 20px;
+}
+
+#starbucks {
+    padding: 30px 0 20px;
+}
+
+#starbucks img {
+    transition: 0.5s;
+}
+
+#starbucks img:hover {
+    transform: scale(1.2);
+}
+
 #footer-link {
     padding: 20px 0;
 }
@@ -234,13 +279,20 @@ footer{
     color: #226641;
     text-decoration: none;
     padding: 0 20px;
+    transition: 0.5s;
 }
-#contact{
+
+#footer-link a:hover {
+    color: #999;
+}
+
+#contact {
     color: #999;
     font-size: 10px;
     padding: 10px 0;
 }
-#copy{
+
+#copy {
     color: #999;
     font-size: 8px;
 }

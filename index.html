@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>紅酒介紹</title>
+    <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css">
+    <!-- Slick CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- 縮圖 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -14,7 +19,9 @@
     <!-- nav 導覽列元素 -->
     <!-- 有語意的元素 -->
     <nav>
-        <a href="#"><img src="./img/logo.png" alt="紅酒logo"></a>
+        <div id="logo">
+            <a href="#"><img src="./img/logo.png" alt="紅酒 LOGO"></a>
+        </div>
         <div id="link">
             <a href="">紅酒介紹</a>
             <a href="">商品資訊</a>
@@ -22,76 +29,76 @@
             <a href="">其他服務</a>
         </div>
         <div id="social">
-            <a href="" target="_bank"><img src="./img/icon-fb.png" alt="fb"></a>
-            <a href="" target="_bank"><img src="./img/icon-ig.png" alt="ig"></a>
+            <a href="" target="_bank"><img src="./img/icon-fb.png" alt="facebook 臉書"></a>
+            <a href="" target="_bank"><img src="./img/icon-ig.png" alt="instagram ig"></a>
         </div>
 
     </nav>
-    <!-- 最新消息 -->
-    <div id="banner"></div>
-    <!-- (div>h1{標題}+hr+p+{我是文字})*3 -->
-    <div>
-        <h1>標題</h1>
-        <hr>
-        <p>我是文字</p>
+    <!-- 最新商品 -->
+    <div id="banner">
+        <!-- (div>h1{標題}+hr+p+{我是文字})*3 -->
 
-    </div>
-    <div>
-        <h1>標題</h1>
-        <hr>
-        <p></p>
-        我是文字
-    </div>
-    <div>
-        <h1>標題</h1>
-        <hr>
-        <p></p>
-        我是文字
-    </div>
-    <!-- 商品資訊 -->
-    <section id="products">
-        <!-- (div>.text+.pic)*3 -->
-        <div>
-            <div class="text">
-                <h1>紅酒</h1>
-                <hr>
-                <p>真是好喝的紅酒</p>
-                <a href="" class="button">more</a>
-            </div>
-            <div class="pic" data-aos="fade" data-ao-duration="1000">
-                <img src="./img/wine01.jpg" alt="">
-            </div>
+        <div class="banner1">
+            <h1>香醇紅酒</h1>
+            <hr>
+            <p>好喝的香醇紅酒 真是讓人流連忘返</p>
         </div>
         <div>
-            <div class="text">
-                <h1>紅酒</h1>
+            <div class="banner2">
+                <h1>甘甜紅酒</h1>
                 <hr>
-                <p>真是好喝的紅酒</p>
-                <a href="" class="button">more</a>
+                <p>獨特甘甜紅酒 真是讓人回味無窮</p>
             </div>
-            <div class="pic" data-aos="fade-up" data-ao-duration="1000">
-                <img src="./img/wine02.jpg" alt="">
+            <div class="banner3">
+                <h1>釀造紅酒</h1>
+                <hr>
+                <p>純天然釀造頂級芳香紅酒</p>
             </div>
         </div>
-        <div>
-            <div class="text">
-                <h1>紅酒</h1>
-                <hr>
-                <p>真是好喝的紅酒</p>
-                <a href="" class="button">more</a>
+        <!-- 商品類型 -->
+        <!-- section 文章元素 -->
+        <section id="products">
+            <!-- (div>.text+.pic)*3 -->
+            <div>
+                <div class="text">
+                    <h1>紅酒</h1>
+                    <hr>
+                    <p>真是好喝的紅酒</p>
+                    <a href="" class="button">more</a>
+                </div>
+                <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
+                    <img src="./img/wine01.jpg" alt="紅酒">
+                </div>
             </div>
-            <div class="pic" data-aos="flip-up" data-ao-duration="2000">
-                <img src="./img/wine03.jpg" alt="">
+            <div>
+                <div class="text">
+                    <h1>紅酒</h1>
+                    <hr>
+                    <p>真是好喝的紅酒</p>
+                    <a href="" class="button">more</a>
+                </div>
+                <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
+                    <img src="./img/wine02.jpg" alt="">
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- 門市資訊 -->
-    <!-- (div>.pic+.text)*3 -->
-    <!-- 門市資訊 -->
-    <section id="info">
-        <!-- (div>.pic+.text)*3 -->
-        <div>
-            <div class="pic">
+            <div>
+                <div class="text">
+                    <h1>紅酒</h1>
+                    <hr>
+                    <p>真是好喝的紅酒</p>
+                    <a href="" class="button">more</a>
+                </div>
+                <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
+                    <img src="./img/wine03.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- 門市資訊 -->
+        <section id="info">
+            <!-- (div>.pic+.text)*3 -->
+            <div>
+                <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" data-aos-offset="500">
+                </div> >
                 <img src="./img/pic-01.jpg" alt="紅酒圖">
             </div>
             <div class="text">
@@ -100,52 +107,52 @@
                 <p>邀請你一起加入我們，創造最美好的星巴克體驗。</p>
                 <a href="" class="button">MORE</a>
             </div>
+    </div>
+    <div>
+        <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="500">
+            <img src="./img/pic-02.jpg" alt="紅酒圖">
         </div>
-        <div>
-            <div class="pic">
-                <img src="./img/pic-02.jpg" alt="紅酒圖">
-            </div>
-            <div class="text">
-                <h1>門市查詢</h1>
-                <hr>
-                <p>查詢鄰近門市，讓我們的夥伴給你美好的一天。。</p>
-                <a href="" class="button">MORE</a>
-            </div>
+        <div class="text">
+            <h1>門市查詢</h1>
+            <hr>
+            <p>查詢鄰近門市，讓我們的夥伴給你美好的一天。。</p>
+            <a href="" class="button">MORE</a>
         </div>
-        <div>
-            <div class="pic">
-                <img src="./img/pic-03.jpg" alt="紅酒圖">
-            </div>
-            <div class="text">
-                <h1>特色門市</h1>
-                <hr>
-                <p>從都市到鄉鎮，我們期待透過更多特色門市，用一杯咖啡的時間，與你分享更多故事</p>
-                <a href="" class="button">MORE</a>
-            </div>
+    </div>
+    <div>
+        <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" data-aos-offset="500">
+            <img src="./img/pic-03.jpg" alt="紅酒圖">
         </div>
+        <div class="text">
+            <h1>特色門市</h1>
+            <hr>
+            <p>從都市到鄉鎮，我們期待透過更多特色門市，用一杯咖啡的時間，與你分享更多故事</p>
+            <a href="" class="button">MORE</a>
+        </div>
+    </div>
     </section>
     <!-- 其他服務 -->
     <div id="service">
         <!-- (.service$>img+h2{小標題})*5  -->
         <div class="service1">
             <img src="./img/pic-03.jpg" alt="">
-            <h2>小標題</h2>
+            <h2>星巴克生活頻道</h2>
         </div>
         <div class="service2">
             <img src="./img/pic-01.jpg" alt="">
-            <h2>小標題</h2>
+            <h2>星聞室</h2>
         </div>
         <div class="service3">
             <img src="./img/pic-02.jpg" alt="">
-            <h2>小標題</h2>
+            <h2>外送</h2>
         </div>
         <div class="service4">
             <img src="./img/pic-03.jpg" alt="">
-            <h2>小標題</h2>
+            <h2>咖啡豆專賣</h2>
         </div>
         <div class="service5">
             <img src="./img/pic-02.jpg" alt="">
-            <h2>小標題</h2>
+            <h2>設備租借</h2>
         </div>
     </div>
     <!-- 頁尾 -->
@@ -154,10 +161,13 @@
             <a href="" target="_bank"><img src="./img/icon-fb.png" alt="fb"></a>
             <a href="" target="_bank"><img src="./img/icon-ig.png" alt="ig"></a>
         </div>
+        <div id="starbucks" data-aos="zoom-in" data-aos-duration="1500"><a href=""><img src="./img/starbucks.png"
+                    alt="Starbucks 星巴克 咖啡"></a></div>
+        <div id="footer-link"><a href="">網站地圖</a><a href="">個人資料保護政策</a><a href="">使用條款與須知</a><a href="">聯絡我們</a></div>
         <div id="contact"></div>服務時間:09:00~21:00</div>
         <div id="copy"></div>Copyright &copy;2021紅酒</div>
-
     </footer>
+    <!-- AOS CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
